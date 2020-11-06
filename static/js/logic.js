@@ -20,6 +20,8 @@ function markerColor(mag) {
       return "#FF0000";
   };
 }
+
+//adding data link
 d3.json(link, function(data) {
   createFeatures(data.features);
 });
