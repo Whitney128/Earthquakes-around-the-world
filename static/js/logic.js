@@ -53,9 +53,7 @@ var outdoors = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10
     "access_token="+ API_KEY );
   
   var baseMaps = {
-    //"Satellite": satellite,
     "Outdoors": outdoors,
-    //"Grayscale": Grayscale
   };
 
   var overlayMaps = {
