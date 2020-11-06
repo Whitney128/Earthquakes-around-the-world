@@ -51,15 +51,7 @@ function createMap(earthquakes) {
 
 var outdoors = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?" +
     "access_token="+ API_KEY );
-
-
-  //var Grayscale = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?" +
-    //"access_token="+ API_KEY );
-
-  //var satellite = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}?" +
-      //"access_token="+ API_KEY );
-
-
+  
   var baseMaps = {
     //"Satellite": satellite,
     "Outdoors": outdoors,
@@ -88,13 +80,7 @@ var outdoors = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10
   
       var div = L.DomUtil.create('div', 'info legend'),
           magnitudes = [-10, 10, 30, 50, 70, 90];
-          //labels = [];
-  
-      // for (var i = 0; i < magnitudes.length; i++) {
-      //     div.innerHTML +=
-      //         '<i style="background:' + labels(magnitudes[i] + 1) + '"></i> ' + 
-      // + magnitudes[i] + (magnitudes[i + 1] ? ' &dash; ' + magnitudes[i + 1] + '<br>' : ' + ');
-      // }
+
            for (var i = 0; i < magnitudes.length; i++) {
           div.innerHTML +=
               '<i style="background:' + labels[i] + '"></i> ' + 
