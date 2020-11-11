@@ -1,10 +1,12 @@
 // Store API link
 var link = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 
+//setting marker sizes for magnitudes
 function markerSize(mag) {
   return mag * 30000;
 }
 
+//setting different colors for magnitudes
 function markerColor(mag) {
   if (mag <= 1) {
       return "  #00FF00";
@@ -26,6 +28,8 @@ d3.json(link, function(data) {
   createFeatures(data.features);
 });
 
+
+//creating function for features
 function createFeatures(earthquakeData) {
 
   var earthquakes = L.geoJSON(earthquakeData, {
@@ -47,6 +51,7 @@ function createFeatures(earthquakeData) {
   createMap(earthquakes);
 }
 
+//creating layers for map
 function createMap(earthquakes) {
 
 var outdoors = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?" +
