@@ -1,4 +1,6 @@
- This project will be used to educate people around the world on natural disastors, specifically earthquakes. The data for these earthquakes that will be presented for 2020 alone. 
+ This project will be used to educate people around the world on natural disastors, specifically earthquakes. 
+ 
+ The data for these earthquakes that will be presented for 2020 alone. 
  
 This project will be utilizing HTMl, JavaScript, leaflet and API Key to create a map. 
 
